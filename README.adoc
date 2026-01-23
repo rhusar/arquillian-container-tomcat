@@ -258,9 +258,9 @@ Once everything is set up, you simply need to run the `./release.sh` script with
 
 By default, the release version cannot contain `SNAPSHOT` and the development version, must contain `SNAPSHOT`.
 
-[source]
+[source,bash]
 ----
-./release.sh -r 1.0.0.Final -d 1.0.1.Final-SNAPSHOT
+./release.sh --release 1.2.4.Final --development 1.2.5.Final-SNAPSHOT --notes-start-tag 1.2.3.Final --dry-run
 ----
 
 === Supported Arguments
